@@ -9,11 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Sesderma</title>
   </head>
   <body>
     <main class="main">
+      <div class="overlay"></div>
+
       <section class="banner">
         <div class="banner_content container">
           <div class="banner_left">
@@ -151,7 +154,7 @@
           </div>
           <div class="categories_content">
             <div class="categories_links">
-              <div class="categories_link">Очищение</div>
+              <div class="categories_link active">Очищение</div>
               <div class="categories_link">Химические пилинги</div>
               <div class="categories_link">Липосомальные пилинги</div>
               <div class="categories_link">Добавки к пилингам</div>
@@ -416,26 +419,226 @@
                   <div class="webinars_item_left">
                     <h2>Вебинар</h2>
                     <div class="webinars_item_date">10 декабря / 12:00</div>
-                    <div class="webinars_item_right">NEW</div>
                   </div>
-                  <p class="webinars_item_text">
-                    Оранжевый пилинг - практические аспекты работы с пилингом. Ретинизация чувствительной кожи в
-                    домашнем уходе. Ретинальдегид в составе пилинга - особенности работы, показания к применению.
-                  </p>
-                  <div class="webinars_item_profile">
-                    <img src="./assets/img/profile_1.png" class="webinars_profile_img" alt="" />
-                    <div class="webinars_item_block">
-                      <h2>Лектор</h2>
-                      <p>Москвичёва Ксения Андреевна</p>
-                    </div>
+                  <div class="webinars_item_right">NEW</div>
+                </div>
+                <p class="webinars_item_text">
+                  Оранжевый пилинг - практические аспекты работы с пилингом. Ретинизация чувствительной кожи в домашнем
+                  уходе. Ретинальдегид в составе пилинга - особенности работы, показания к применению.
+                </p>
+                <div class="webinars_item_profile">
+                  <img src="./assets/img/profile_1.png" class="webinars_profile_img" alt="" />
+                  <div class="webinars_item_block">
+                    <h2>Лектор</h2>
+                    <p>Москвичёва Ксения Андреевна</p>
                   </div>
-                  <button class="btn">Записаться</button>
+                </div>
+                <button class="btn">
+                  Записаться
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M29.75 29.75V12.25H12.25"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.25 29.75L29.75 12.25"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="webinars_item">
+                <div class="webinars_item_top">
+                  <div class="webinars_item_left">
+                    <h2>Вебинар</h2>
+                    <div class="webinars_item_date">10 декабря / 12:00</div>
+                  </div>
+                  <div class="webinars_item_right">NEW</div>
+                </div>
+                <p class="webinars_item_text">
+                  Оранжевый пилинг - практические аспекты работы с пилингом. Ретинизация чувствительной кожи в домашнем
+                  уходе. Ретинальдегид в составе пилинга - особенности работы, показания к применению.
+                </p>
+                <div class="webinars_item_profile">
+                  <img src="./assets/img/profile_1.png" class="webinars_profile_img" alt="" />
+                  <div class="webinars_item_block">
+                    <h2>Лектор</h2>
+                    <p>Москвичёва Ксения Андреевна</p>
+                  </div>
+                </div>
+                <button class="btn">
+                  Записаться
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M29.75 29.75V12.25H12.25"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.25 29.75L29.75 12.25"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="webinars_right">
+              <div class="webinars_swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/img/webinars_img.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/header_img.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/header_img.png" alt="" />
+                  </div>
+                </div>
+                <div class="webinars_pagination">
+                  <img src="./assets/img/webinars_top_btn.svg" class="webinars_next" alt="" />
+                  <div class="swiper-pagination"></div>
+                  <img src="./assets/img/webinars_bottom_btn.svg" class="webinars_prev" alt="" />
                 </div>
               </div>
+
+              <button class="btn">
+                Посмотреть прошедшие
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.75 29.75V12.25H12.25"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.25 29.75L29.75 12.25"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
+
+        <div class="webinars_modal">
+          <h2>Запишитесь на вебинар</h2>
+          <form action="" class="contact_form">
+            <input type="text" placeholder="Имя" class="contact_input webinars_input" required />
+            <input type="number" placeholder="Телефон" class="contact_input webinars_input" required />
+            <input type="email" placeholder="E-mail" class="contact_input webinars_input" required />
+            <label for="contact_1" class="contact_label">
+              <input type="checkbox" name="" id="contact_1" />
+              <p>Согласен с <span>Пользовательским соглашением</span></p>
+            </label>
+            <label for="contact_2" class="contact_label">
+              <input type="checkbox" name="" id="contact_2" />
+              <p>Согласен с <span>обработкой персональных данных</span></p>
+            </label>
+            <button class="btn" type="submit">
+              Оставить заявку
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.0833 24.0832V9.9165H9.91668"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.91668 24.0832L24.0833 9.9165"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </form>
+          <div class="modal_close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 19L19 1" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M19 19L1 1" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact_wrapper container">
+          <h2 class="title">ВОЗНИКЛИ ВОПРОСЫ?</h2>
+          <p class="contact_text">
+            Личный менеджер свяжется с вами и поможет с вопросом. Оставьте ваши контактные данные
+          </p>
+          <form action="" class="contact_form">
+            <input type="text" placeholder="Имя" class="contact_input" required />
+            <input type="number" placeholder="Телефон" class="contact_input" required />
+            <input type="email" placeholder="E-mail" class="contact_input" required />
+            <label for="contact_1" class="contact_label">
+              <input type="checkbox" name="" id="contact_1" />
+              <p>Согласен с <span>Пользовательским соглашением</span></p>
+            </label>
+            <label for="contact_2" class="contact_label">
+              <input type="checkbox" name="" id="contact_2" />
+              <p>Согласен с <span>обработкой персональных данных</span></p>
+            </label>
+            <button class="btn" type="submit">
+              Оставить заявку
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.0833 24.0832V9.9165H9.91668"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.91668 24.0832L24.0833 9.9165"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
       </section>
     </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      let swiper = new Swiper(".webinars_swiper", {
+        navigation: {
+          nextEl: ".webinars_prev",
+          prevEl: ".webinars_next",
+        },
+        speed: 600,
+        effect: "fade",
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
