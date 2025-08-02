@@ -1111,4 +1111,7 @@ input[type="number"] {
   .quiz_final_gift {
     padding-left: 30px;
   }
+  .quiz_variants_items {
+    flex-direction: column;
+  }
 }
