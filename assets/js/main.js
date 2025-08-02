@@ -43,3 +43,6 @@ $(document).ready(function () {
     }
   }
 });
+$(".quiz_variants_item").click(function () {
+  $(this).toggleClass("active");
+});

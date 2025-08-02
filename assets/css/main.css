@@ -684,6 +684,16 @@ input[type="number"] {
   border: 1px solid var(--gray);
   cursor: pointer;
   flex-grow: 1;
+  transition: 0.1s ease-in-out;
+  user-select: none;
+}
+.quiz_variants_item:hover {
+  background: var(--gray);
+  color: var(--white);
+}
+.quiz_variants_item.active {
+  background: var(--gray);
+  color: var(--white);
 }
 .quiz_variants_input {
   padding: 8px 20px;
