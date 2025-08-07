@@ -216,7 +216,7 @@
 }
 .leader_bottom {
   display: flex;
-  gap: 200px;
+  gap: 170px;
 }
 .leader_bottom_left {
   position: relative;
@@ -257,6 +257,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  width: 320px;
 }
 .categories_link {
   font-weight: 300;
@@ -270,6 +271,7 @@
 }
 .categories_block {
   max-width: 1215px;
+  flex: 1;
 }
 .categories_block_text {
   font-weight: 400;
@@ -304,7 +306,7 @@
   cursor: pointer;
 }
 .categories_block_line p {
-  flex: 1
+  flex: 1;
 }
 .categories_block_line::before {
   position: absolute;
@@ -554,6 +556,7 @@ input[type="number"] {
   font-weight: 400;
   font-size: 16px;
   color: var(--gray-secondary);
+  flex: 1;
   span {
     text-decoration: underline;
   }
@@ -693,6 +696,7 @@ input[type="number"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .quiz_content_quest {
   gap: 160px;
@@ -770,7 +774,9 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 100px;
 }
 .quiz_progress::before {
   content: "";
@@ -888,6 +894,12 @@ input[type="number"] {
   .leader_bottom_right::before {
     left: 35px;
   }
+  .categories_links {
+    width: unset;
+  }
+  .quiz_progress {
+    display: none;
+  }
 }
 @media screen and (max-width: 1100px) {
   .webinars_content {
@@ -959,9 +971,9 @@ input[type="number"] {
   .webinars_content {
     gap: 40px;
   }
-  .webinars_right {
+  /* .webinars_right {
     flex-direction: column-reverse;
-  }
+  } */
   .categories_block_lines {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1039,7 +1051,7 @@ input[type="number"] {
     font-size: 14px;
   }
   .leader_bottom_right {
-    font-size: 12px;
+    font-size: 14px;
   }
   .leader {
     padding: 40px 0;
@@ -1135,6 +1147,16 @@ input[type="number"] {
   }
   .quiz_title {
     font-size: 24px;
+  }
+  .banner_items {
+    left: 20px;
+    bottom: 20px;
+  }
+  .banner_right img {
+    max-height: 360px;
+  }
+  .categories_links {
+    row-gap: 15px;
   }
 }
 @media screen and (max-width: 480px) {
