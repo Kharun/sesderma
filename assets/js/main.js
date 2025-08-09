@@ -28,6 +28,13 @@ $(document).ready(function () {
     }
   });
 
+  $(".quiz_back").click(function () {
+    if (currentStep > 0) {
+      currentStep--;
+      showStep(currentStep);
+    }
+  });
+
   function showStep(index) {
     questions.removeClass("active").eq(index).addClass("active");
 
@@ -47,19 +54,19 @@ $(".quiz_variants_item").click(function () {
   $(this).toggleClass("active");
 });
 
-$(".categories_link").click(function() {
-  $(".categories_link").removeClass("active")
-  $(this).addClass("active")
-  const filterLink = $(this).data("filter")
-  $(".categories_block_lines").removeClass("active")
+$(".categories_link").click(function () {
+  $(".categories_link").removeClass("active");
+  $(this).addClass("active");
+  const filterLink = $(this).data("filter");
+  $(".categories_block_lines").removeClass("active");
 
-  $(".categories_block_lines").each(function() {
-    const contentFilter = $(this).data("filter")
+  $(".categories_block_lines").each(function () {
+    const contentFilter = $(this).data("filter");
 
-    if(filterLink === contentFilter) {
-      $(this).addClass('active')
+    if (filterLink === contentFilter) {
+      $(this).addClass("active");
     } else {
-      $(this).removeClass('active')
+      $(this).removeClass("active");
     }
-  })
-})
+  });
+});
